@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <nav class="sidebar">
+      <div class="sidebar-brand">
+        <span class="material-icons brand-icon">dashboard</span>
+        <span class="brand-name">Dashboard</span>
+      </div>
+
+      <ul class="sidebar-nav">
+        <li><a href="#"><span class="material-icons">home</span>Home</a></li>
+        <li><a href="#"><span class="material-icons">badge</span>Profile</a></li>
+        <li><a href="#"><span class="material-icons">chat_bubble</span>Messages</a></li>
+        <li><a href="#"><span class="material-icons">history</span>History</a></li>
+        <li><a href="#"><span class="material-icons">description</span>Tasks</a></li>
+        <li><a href="#"><span class="material-icons">groups</span>Communities</a></li>
+      </ul>
+
+      <ul class="sidebar-nav sidebar-nav-secondary">
+        <li><a href="#"><span class="material-icons">settings</span>Settings</a></li>
+        <li><a href="#"><span class="material-icons">help</span>Support</a></li>
+        <li><a href="#"><span class="material-icons">verified_user</span>Privacy</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <div class="header-top">
+        <span class="material-icons search-icon">search</span>
+        <input type="text" id="search-bar" class="search-bar" aria-label="Search" placeholder="Search your projects...">
+        <span class="material-icons header-icon">notifications</span>
+        <img class="avatar avatar-small" src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=morgan" alt="Morgan Oakley avatar">
+        <span class="header-username">Morgan Oakley</span>
+      </div>
+
+      <div class="header-bottom">
+        <img class="avatar avatar-large" src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=morgan" alt="Morgan Oakley avatar">
+        <div class="greeting">
+          <span class="greeting-sub">Hi there,</span>
+          <span class="greeting-name">Morgan Oakley (@morgan)</span>
+        </div>
+        <div class="header-buttons">
+          <button id="new-btn" class="btn btn-pill">New</button>
+          <button id="upload-btn" class="btn btn-pill">Upload</button>
+          <button id="share-btn" class="btn btn-pill">Share</button>
+        </div>
+        <input type="file" id="upload-input" hidden multiple>
+      </div>
+    </header>
+
+    <main class="main-content">
+
+      <section class="projects">
+        <h2>Your Projects</h2>
+        <div class="project-cards" id="project-cards">
+
+          <article class="card">
+            <h3>Super Cool Project</h3>
+            <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+            <div class="card-actions">
+              <span class="material-icons">grade</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Less Cool Project</h3>
+            <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+            <div class="card-actions">
+              <span class="material-icons">grade</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Impossible App</h3>
+            <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+            <div class="card-actions">
+              <span class="material-icons">grade</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Easy Peasy App</h3>
+            <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+            <div class="card-actions">
+              <span class="material-icons">grade</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Ad Blocker</h3>
+            <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+            <div class="card-actions">
+              <span class="material-icons">grade</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Money Maker</h3>
+            <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+            <div class="card-actions">
+              <span class="material-icons">grade</span>
+              <span class="material-icons">visibility</span>
+              <span class="material-icons">share</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <aside class="side-panel">
+        <section class="announcements">
+          <h2>Announcements</h2>
+          <div class="card announcement-card">
+            <div class="announcement-item">
+              <h4>Site Maintenance</h4>
+              <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+            </div>
+            <hr>
+            <div class="announcement-item">
+              <h4>Community Share Day</h4>
+              <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+            </div>
+            <hr>
+            <div class="announcement-item">
+              <h4>Updated Privacy Policy</h4>
+              <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="trending">
+          <h2>Trending</h2>
+          <div class="card trending-card">
+            <div class="trending-item">
+              <img class="avatar avatar-small" src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=tegan" alt="tegan avatar">
+              <div>
+                <p class="trending-handle">@tegan</p>
+                <p class="trending-title">World Peace Builder</p>
+              </div>
+            </div>
+            <div class="trending-item">
+              <img class="avatar avatar-small" src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=morgan" alt="morgan avatar">
+              <div>
+                <p class="trending-handle">@morgan</p>
+                <p class="trending-title">Super Cool Project</p>
+              </div>
+            </div>
+            <div class="trending-item">
+              <img class="avatar avatar-small" src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=kendall" alt="kendall avatar">
+              <div>
+                <p class="trending-handle">@kendall</p>
+                <p class="trending-title">Life Changing App</p>
+              </div>
+            </div>
+            <div class="trending-item">
+              <img class="avatar avatar-small" src="https://api.dicebear.com/7.x/fun-emoji/svg?seed=alex" alt="alex avatar">
+              <div>
+                <p class="trending-handle">@alex</p>
+                <p class="trending-title">No Traffic Maker</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+    </main>
+  </div>
+
+  <div id="modal-overlay" class="modal-overlay" hidden>
+    <form id="new-project-form" class="modal">
+      <h3>New project</h3>
+      <label for="new-project-title">Title</label>
+      <input type="text" id="new-project-title" required maxlength="40" placeholder="e.g. Weekend Hack">
+      <label for="new-project-desc">Description</label>
+      <textarea id="new-project-desc" rows="3" maxlength="200" placeholder="What's it about?"></textarea>
+      <div class="modal-actions">
+        <button type="button" id="modal-cancel" class="btn btn-pill btn-ghost">Cancel</button>
+        <button type="submit" class="btn btn-pill">Create</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
